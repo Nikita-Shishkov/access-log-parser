@@ -2,8 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите текст и нажмите <Enter>:");
-        String text = new Scanner(System.in) .nextLine();
-        System.out.println("Длинна текста: " + text.length());
+        System.out.println("Введите первое число:");
+        int x = new Scanner(System.in) .nextInt();
+        System.out.println("Введите второе число:");
+        int y = new Scanner(System.in) .nextInt();
+        System.out.println("Сумма чисел:"+" "+(x+y));
+        System.out.println("Разность чисел:"+" "+(x-y));
+        System.out.println("Произведение чисел:"+" "+(x*y));
+        double w = (double)x/y;
+        System.out.println("Частное чисел:"+" "+w);
     }
 }
